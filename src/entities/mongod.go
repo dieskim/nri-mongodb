@@ -69,7 +69,7 @@ func (c *mongodCollector) CollectMetrics() {
 	}
 
 	logError(collectServerStatus(c, ms), "Collect server status failed: %v")
-	logError(collectTop(c), "Collect top failed: %v")
+	//logError(collectTop(c), "Collect top failed: %v")
 }
 
 // GetStandaloneMongod creates a mongod from a session
